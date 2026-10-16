@@ -369,6 +369,23 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
+                    <h3>IoT Trust Robustness (Honours Research)</h3>
+                    <div class="skill-tags" style="margin-bottom: 1rem;">
+                        <span class="skill-tag" style="background: transparent; border: none; padding: 0; color: var(--accent);">ESP32 • MQTT • Python • Dash</span>
+                    </div>
+                    <p class="project-desc"><strong>Problem:</strong> Behaviour-based trust scoring assumes a device's behavioural metrics are inherently trustworthy, so a protocol-compliant attacker could hold up &mdash; or destroy &mdash; a device's trust score without ever breaking authentication.</p>
+                    <p class="project-desc"><strong>Motivation:</strong> Honours research project empirically testing whether a Behavioural Trust Index survives adversarial manipulation, on a real hardware testbed rather than a simulation.</p>
+                    <ul style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; padding-left: 1.2rem;">
+                        <li>ESP32-WROOM-32 nodes (DHT11, MQ-131 ozone, sound/light) publishing over Mosquitto MQTT to a Rock Pi 4SE gateway</li>
+                        <li>BTI aggregated from four metrics &mdash; message frequency, inter-arrival timing, data stability, packet size &mdash; with exponential trust decay (&alpha; = 0.7)</li>
+                        <li>Controlled attack scenarios: replay, timing manipulation, false data injection, traffic flooding and behaviour-mimicking attacks</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/CS-UWC/4165489" target="_blank">Source Code &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <h3>Green Supply Chain Auditor</h3>
                     <div class="skill-tags" style="margin-bottom: 1rem;">
                         <span class="skill-tag" style="background: transparent; border: none; padding: 0; color: var(--accent);">Python • CrewAI • ChromaDB • Streamlit</span>
